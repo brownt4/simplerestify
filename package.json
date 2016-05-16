@@ -1,0 +1,14 @@
+{
+  "name": "simplerestify",
+  "version": "1.0.0",
+  "description": "Simple restify server",
+  "main": "server.js",
+  "scripts": {
+    "test": ""
+  },
+  "author": "Brian Phipps",
+  "license": "MIT",
+  "devDependencies": {
+    "restify": "^4.0.4"
+  }
+}
