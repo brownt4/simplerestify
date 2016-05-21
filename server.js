@@ -6,6 +6,10 @@ var server = restify.createServer({
      name: 'simplerestify'
 });
 
+server.get(/.*/, restify.serveStatic({
+    'directory': 'src/html/',
+    'default': 'index.html'
+ }));
 
 server.use(restify.bodyParser());
 server.use(restify.queryParser());
