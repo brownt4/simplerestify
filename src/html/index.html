@@ -139,7 +139,7 @@
                 document.getElementById("pass2").setCustomValidity("Passwords Don't Match");
             } else {
                 document.getElementById("pass2").setCustomValidity('');
-              }
+            }
         }
     </script>
 </head>
@@ -149,14 +149,14 @@
         <h1>Sign Up</h1>
         <form id="valid" action="/" method="post" autocomplete="off">
             <div class="name-row">
-              <!--Name pattern also allows for a space in the name.-->
+                <!--Name pattern also allows for a space in the name.-->
                 <label for="firstname">First Name</label>
                 <input type="text" name="firstname" pattern="[a-zA-Z\s]+" title="Must contain letters only" required>
                 <label for="lastname">Last Name</label>
                 <input type="text" name="lastname" title="Must contain letters only" pattern="[a-zA-Z0-9\s]+" required autofill>
             </div>
             <label for="email">Email</label>
-            <input type="email" name="email" required>
+            <input type="text" name="email" pattern="^(?:[\w\!\#\$\%\&\'\*\+\-\/\=\?\^\`\{\|\}\~]+\.)*[\w\!\#\$\%\&\'\*\+\-\/\=\?\^\`\{\|\}\~]+@(?:(?:(?:[a-zA-Z0-9](?:[a-zA-Z0-9\-](?!\.)){0,61}[a-zA-Z0-9]?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9\-](?!$)){0,61}[a-zA-Z0-9]?)|(?:\[(?:(?:[01]?\d{1,2}|2[0-4]\d|25[0-5])\.){3}(?:[01]?\d{1,2}|2[0-4]\d|25[0-5])\]))$" required>
             <label for="bday">Date of Birth</label>
             <input type="date" name="bday" required>
             <label for="username">User Name</label>
